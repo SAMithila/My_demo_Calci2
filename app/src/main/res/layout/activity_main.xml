@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Number 1" />
+
+    <TextView
+        android:id="@+id/tvNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
+        android:text="Number 2" />
+
+    <EditText
+        android:id="@+id/etEnterNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:layout_toEndOf="@+id/tvNumber1"
+        android:ems="10"
+        android:hint="Enter Number1"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/tvNumber1"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/etEnterNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="164dp"
+        android:layout_toEndOf="@+id/tvNumber1"
+        android:ems="10"
+        android:hint="Enter Number 2"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/tvNumber1" />
+
+    <Button
+        android:id="@+id/btnADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="204dp"
+        android:layout_marginStart="84dp"
+        android:text="+"
+        android:layout_alignParentLeft="true"
+        tools:ignore="OnClick,RtlCompat"
+        android:onClick="doAdd"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etEnterNum1"
+        android:layout_alignTop="@+id/btnADD"
+        android:text="-"
+        android:layout_alignRight="@+id/etEnterNum1"
+        tools:ignore="OnClick,RtlCompat"
+        android:onClick="doSub"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="128dp"
+        android:layout_toStartOf="@+id/btnSub"
+        android:layout_toLeftOf="@+id/btnSub"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>
